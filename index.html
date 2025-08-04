@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltage Calculation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solar Pannel Voltage Calculator</h1>
+        <h2>RHR612</h2>
+
+        <!-- Form for input -->
+        <form id="voltageForm">
+            <div class="input-group">
+                <label for="lowestTemp">Lowest Temperature (°C):</label>
+                <input type="number" id="lowestTemp" required>
+            </div>
+
+            <div class="input-group">
+                <label for="highestTemp">Highest Temperature (°C):</label>
+                <input type="number" id="highestTemp" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tkVoc">Tk Voc:</label>
+                <input type="number" id="tkVoc" required>
+            </div>
+
+            <div class="input-group">
+                <label for="voc">Open Circuit Voltage (Voc):</label>
+                <input type="number" id="voc" required>
+            </div>
+
+            <div class="input-group">
+                <label for="pmax">Tk Pmax:</label>
+                <input type="number" id="pmax" required>
+            </div>
+
+            <div class="input-group">
+                <label for="vmpp">Maximum Power Point (Vmpp):</label>
+                <input type="number" id="vmpp" required>
+            </div>
+
+            <button type="button" onclick="calculateVoltage()">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
