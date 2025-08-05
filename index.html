@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltage Calculation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solar Voltage Calculator</h1>
+        <h2>পড়া লেখা করে যে গাড়ী চাপা পড়ে সে</h2>
+
+        <!-- Form for input -->
+        <form id="voltageForm">
+            <!-- Input fields for user data -->
+            <div class="input-group">
+                <label for="lowTemp">Lowest Temperature (°C):</label>
+                <input type="number" id="lowTemp" required>
+            </div>
+
+            <div class="input-group">
+                <label for="highTemp">Highest Temperature (°C):</label>
+                <input type="number" id="highTemp" required>
+            </div>
+
+            <div class="input-group">
+                <label for="avgTemp">Average Temperature (°C):</label>
+                <input type="number" id="avgTemp" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tkVoc">Tk Voc:</label>
+                <input type="number" id="tkVoc" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tkPmax">Tk Pmax:</label>
+                <input type="number" id="tkPmax" required>
+            </div>
+
+            <div class="input-group">
+                <label for="voc">Open Circuit Voltage (Voc):</label>
+                <input type="number" id="voc" required>
+            </div>
+
+            <div class="input-group">
+                <label for="vmpp">Maximum Power Point (Vmpp):</label>
+                <input type="number" id="vmpp" required>
+            </div>
+
+            <button type="button" onclick="calculateVoltage()">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
